@@ -1,30 +1,95 @@
 ---
 - hosts: all
 
-  tasks:
-    - name: Creates directory
-      file: path=/src/minecraft state=directory
+  handlers:
+    - name: restart ssh
+      service:
+        name=sshd
+        state=restarted
 
-    - git_config:
-        name: user.email
-        repo: /etc
-        scope: local
-        value: 'minecraft@{{ ansible_fqdn }}'
+  tasks:
+    - name: Create new group
+      group:
+        name: steve
+
+    - name: Create new user
+      user:
+        name: steve
+        groups: steve,docker
+
+    - name: Create .ssh folder
+      file:
+        path: /home/steve/.ssh
+        state: directory
+        owner: steve
+        group: steve
+        mode: 0700
+
+    - name: Upload SSH key for steve
+      copy:
+        src: /Users/ldesrosi/.ssh/minecraft
+        dest: /home/steve/.ssh/id_rsa
+        owner: steve
+        group: steve
+        mode: 0700    
+
+    - name: move authorization keys to user steve
+      copy:
+        src: ~/.ssh/authorized_keys
+        dest: /home/steve/.ssh/authorized_keys
+        owner: steve
+        group: steve
+        mode: 0700
+        remote_src: true
+
+    - name: Disable Password Authentication
+      lineinfile:
+            dest=/etc/ssh/sshd_config
+            regexp='^PasswordAuthentication'
+            line="PasswordAuthentication no"
+            state=present
+            backup=yes
+      notify:
+        - restart ssh
+  
+    - name: Disable Root Login
+      lineinfile:
+            dest=/etc/ssh/sshd_config
+            regexp='^PermitRootLogin'
+            line="PermitRootLogin no"
+            state=present
+            backup=yes
+      notify:
+        - restart ssh
+
+    - name: Creates directory
+      file: 
+        path: /src/minecraft
+        state: directory
+        owner: steve
+        group: steve
+        mode: 0755
+
+    - name: Setup default git configuraiton
+      git_config:
+        name="{{ item.name }}"
+        scope=global
+        value="{{ item.value }}"
+      with_items:
+        - {name: "user.name",  value: "Minecraft" }
+        - {name: "user.email", value: "minecraft@{{ ansible_fqdn }}" }
+        - {name: "ui.color", value: "True" }
+      become: Yes
+      become_user: steve
 
     - name: Download repository locally
       git:
-        repo: "{{ lookup('env','REPO') }}"
+        repo: "git@github.com:ldesrosi/kijilas-server.git"
         dest: /src/minecraft
         clone: yes
+        accept_hostkey: true
+      become: yes
+      become_user: steve
 
     - name: Create minecraft container
-      docker_container:
-        name: minecraft
-        image: itzg/minecraft-server
-        state: present
-        ports:
-        - "25565:25565"
-        env:
-          EULA: TRUE
-        volumes:
-          - "/src/minecraft:/data"
+      command: bash /src/minecraft/server/script/startup.sh

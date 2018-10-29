@@ -3,7 +3,8 @@
 **/eula.txt
 terraform
 *.tfplan
-*.tfstate
+*.tfstate*
 **/localrc.sh
 **/.terraform/
 **/inventory
+**/ansible.retry

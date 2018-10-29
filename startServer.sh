@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
 
-source localrc
+source localrc.sh
 
 export TF_LOG=INFO
 export PATH=$PWD:$PATH
-export SSH_FINGERPRINT=$(ssh-keygen -E md5 -lf $SSH_PUB | awk '{print $2}')
+export SSH_FINGERPRINT=$(ssh-keygen -E md5 -lf $SSH_PUB | awk '{print $2}' | cut -c 5- )
 
 terraform init
 
-terraform plan -out=terraform.tfplan \
+#terraform plan -out=terraform.tfplan \
+#  -var "do_token=${DO_PAT}" \
+#  -var "pub_key=$SSH_PUB" \
+#  -var "pvt_key=$SSH_KEY" \
+#  -var "ssh_fingerprint=$SSH_FINGERPRINT" \
+#  -var "domain_name=$DOMAIN_NAME"
+
+terraform apply -auto-approve \
   -var "do_token=${DO_PAT}" \
   -var "pub_key=$SSH_PUB" \
   -var "pvt_key=$SSH_KEY" \
   -var "ssh_fingerprint=$SSH_FINGERPRINT" \
   -var "domain_name=$DOMAIN_NAME"
-
-#terraform apply

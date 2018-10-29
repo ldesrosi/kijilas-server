@@ -25,7 +25,7 @@ resource "digitalocean_droplet" "minecraft" {
   }
 
 provisioner "remote-exec" {
-    inline = ["sudo dnf -y install python"]
+    inline = ["sudo apt-get -y install python"]
 
     connection {
       type        = "ssh"
