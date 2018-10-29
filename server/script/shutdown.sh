@@ -4,7 +4,7 @@
 docker stop mc 
 docker rm mc
 
-cd /root/kijilas-server
+cd /src/minecraft/
 git add -A
 git commit -m "World update" 
 git push

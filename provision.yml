@@ -93,3 +93,5 @@
 
     - name: Create minecraft container
       command: bash /src/minecraft/server/script/startup.sh
+      become: yes
+      become_user: steve

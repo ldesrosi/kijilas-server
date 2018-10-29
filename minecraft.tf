@@ -39,7 +39,7 @@ provisioner "remote-exec" {
   }
 
   provisioner "local-exec" {
-    command = "ansible-playbook -u root -i '${self.ipv4_address},' --private-key ${var.pvt_key} ansible.yml" 
+    command = "ansible-playbook -u root -i '${self.ipv4_address},' --private-key ${var.pvt_key} provision.yml" 
   }
 }
 
@@ -72,6 +72,11 @@ resource "digitalocean_firewall" "minecraft" {
       source_addresses   = ["0.0.0.0/0", "::/0"]
     },
     {
+      protocol           = "udp"
+      port_range         = "25565"
+      source_addresses   = ["0.0.0.0/0", "::/0"]
+    },
+    {
       protocol           = "icmp"
       source_addresses   = ["0.0.0.0/0", "::/0"]
     },
@@ -80,12 +85,12 @@ resource "digitalocean_firewall" "minecraft" {
   outbound_rule = [
     {
       protocol                = "tcp"
-      port_range              = "53"
+      port_range              = "1-65535"
       destination_addresses   = ["0.0.0.0/0", "::/0"]
     },
     {
       protocol                = "udp"
-      port_range              = "53"
+      port_range              = "1-65535"
       destination_addresses   = ["0.0.0.0/0", "::/0"]
     },
     {
