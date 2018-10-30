@@ -4,5 +4,11 @@
       "minecraft:wooded_hills": "2018-10-28 09:29:58 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_red_flower": "2018-10-30 21:41:23 +0000"
+    },
+    "done": true
   }
 }
