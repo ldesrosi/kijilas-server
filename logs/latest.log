@@ -1,0 +1,65 @@
+[00:07:22] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[00:07:22] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:07:22] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:07:22] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[00:07:22] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[00:07:22] [main/INFO]: Loaded 0 recipes
+[00:07:22] [main/INFO]: Loaded 0 advancements
+[00:07:22] [Server thread/INFO]: Starting minecraft server version 1.13.2
+[00:07:22] [Server thread/INFO]: Loading properties
+[00:07:22] [Server thread/INFO]: Default game type: SURVIVAL
+[00:07:22] [Server thread/INFO]: Generating keypair
+[00:07:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:07:23] [Server thread/INFO]: Using epoll channel type
+[00:07:23] [Server thread/INFO]: Preparing level "world"
+[00:07:23] [Server thread/INFO]: Reloading ResourceManager: Default
+[00:07:24] [Server thread/INFO]: Loaded 524 recipes
+[00:07:24] [Server thread/INFO]: Loaded 571 advancements
+[00:07:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:07:25] [Server thread/INFO]: Preparing spawn area: 4%
+[00:07:25] [Server thread/INFO]: Preparing spawn area: 8%
+[00:07:25] [Server thread/INFO]: Preparing spawn area: 12%
+[00:07:25] [Server thread/INFO]: Preparing spawn area: 16%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 20%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 24%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 28%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 32%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 36%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 40%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 44%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 48%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 52%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 56%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 60%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 64%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 68%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 72%
+[00:07:26] [Server thread/INFO]: Preparing spawn area: 76%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 80%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 84%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 88%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 92%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 96%
+[00:07:27] [Server thread/INFO]: Preparing spawn area: 100%
+[00:07:27] [Server thread/INFO]: Time elapsed: 2172 ms
+[00:07:27] [Server thread/INFO]: Done (4.117s)! For help, type "help"
+[00:07:27] [Server thread/INFO]: Starting remote control listener
+[00:07:27] [RCON Listener #1/INFO]: RCON running on 0.0.0.0:25575
+[00:08:30] [User Authenticator #1/INFO]: UUID of player BlockMiner73 is a246574b-4283-4036-8d2d-0bf8596de528
+[00:08:30] [Server thread/INFO]: BlockMiner73[/82.30.198.224:56982] logged in with entity id 291 at (105.5, 69.0, -264.5)
+[00:08:30] [Server thread/INFO]: BlockMiner73 joined the game
+[00:08:59] [Server thread/INFO]: BlockMiner73 lost connection: Disconnected
+[00:08:59] [Server thread/INFO]: BlockMiner73 left the game
+[00:09:37] [Server thread/INFO]: Stopping the server
+[00:09:37] [Server thread/INFO]: Stopping server
+[00:09:37] [Server thread/INFO]: Saving players
+[00:09:37] [Server thread/INFO]: Saving worlds
+[00:09:37] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[00:09:37] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[00:09:37] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[00:09:37] [Server Shutdown Thread/INFO]: Stopping server
+[00:09:37] [Server Shutdown Thread/INFO]: Saving players
+[00:09:37] [Server Shutdown Thread/INFO]: Saving worlds
+[00:09:37] [Server Shutdown Thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[00:09:37] [Server Shutdown Thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[00:09:37] [Server Shutdown Thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
