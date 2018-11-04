@@ -5,9 +5,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2018-11-04 21:06:35 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
       "in_water": "2018-11-01 22:16:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_log": "2018-11-04 21:06:35 +0000"
     },
     "done": true
   },
@@ -41,8 +53,15 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2018-11-04 21:06:35 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:forest": "2018-11-04 21:06:08 +0000",
       "minecraft:wooded_hills": "2018-10-28 09:29:58 +0000"
     },
     "done": false
