@@ -335,6 +335,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2018-12-08 22:12:23 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gold_nugget": {
     "criteria": {
       "has_gold_ingot": "2018-11-04 22:09:46 +0000"
@@ -456,13 +462,13 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
+  "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
     "criteria": {
       "has_sand": "2018-11-04 21:29:17 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
+  "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
     "criteria": {
       "has_sand": "2018-11-04 21:29:17 +0000"
     },
@@ -566,6 +572,7 @@
   },
   "minecraft:husbandry/bred_all_animals": {
     "criteria": {
+      "minecraft:cow": "2018-12-08 21:29:42 +0000",
       "minecraft:wolf": "2018-11-04 22:57:54 +0000"
     },
     "done": false
@@ -636,6 +643,12 @@
   "minecraft:recipes/transportation/minecart": {
     "criteria": {
       "has_iron_ingot": "2018-11-04 21:35:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/return_to_sender": {
+    "criteria": {
+      "killed_ghast": "2018-12-08 20:50:53 +0000"
     },
     "done": true
   },
@@ -891,6 +904,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/activator_rail": {
+    "criteria": {
+      "has_rail": "2018-12-08 22:12:23 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-10 00:21:50 +0000"
@@ -901,11 +920,13 @@
     "criteria": {
       "minecraft:skeleton": "2018-11-04 21:28:35 +0000",
       "minecraft:husk": "2018-11-04 22:31:46 +0000",
+      "minecraft:ghast": "2018-12-08 20:50:53 +0000",
+      "minecraft:cave_spider": "2018-12-08 22:16:08 +0000",
       "minecraft:enderman": "2018-11-04 22:13:43 +0000",
       "minecraft:spider": "2018-11-04 21:28:29 +0000",
       "minecraft:zombie": "2018-11-04 21:07:53 +0000",
-      "minecraft:drowned": "2018-11-04 22:09:44 +0000",
       "minecraft:creeper": "2018-11-04 21:40:10 +0000",
+      "minecraft:drowned": "2018-11-04 22:09:44 +0000",
       "minecraft:zombie_villager": "2018-11-10 00:59:35 +0000",
       "minecraft:slime": "2018-11-10 01:04:11 +0000"
     },
@@ -1594,8 +1615,8 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:mountains": "2018-11-04 21:57:51 +0000",
       "minecraft:forest": "2018-11-04 21:06:14 +0000",
+      "minecraft:mountains": "2018-11-04 21:57:51 +0000",
       "minecraft:taiga": "2018-11-04 22:43:17 +0000",
       "minecraft:desert_hills": "2018-11-04 21:43:37 +0000",
       "minecraft:desert": "2018-11-04 21:42:15 +0000",
@@ -1637,6 +1658,12 @@
   "minecraft:recipes/decorations/cobblestone_wall": {
     "criteria": {
       "has_cobblestone": "2018-11-04 21:23:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/powered_rail": {
+    "criteria": {
+      "has_rail": "2018-12-08 22:12:23 +0000"
     },
     "done": true
   },
