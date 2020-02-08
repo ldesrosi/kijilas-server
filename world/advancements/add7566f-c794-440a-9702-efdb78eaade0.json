@@ -77,12 +77,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/wheat": {
-    "criteria": {
-      "has_at_least_9_wheat": "2018-11-04 22:33:28 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/white_bed": {
     "criteria": {
       "has_white_wool": "2018-11-04 21:24:08 +0000"
@@ -158,12 +152,6 @@
   "minecraft:recipes/building_blocks/magenta_wool": {
     "criteria": {
       "has_white_wool": "2018-11-04 21:24:08 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/redstone": {
-    "criteria": {
-      "has_at_least_9_redstone": "2018-11-10 00:38:46 +0000"
     },
     "done": true
   },
@@ -347,12 +335,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/emerald_block": {
-    "criteria": {
-      "has_at_least_9_emerald": "2018-12-16 17:56:02 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2018-11-04 21:24:02 +0000"
@@ -374,6 +356,12 @@
   "minecraft:recipes/transportation/detector_rail": {
     "criteria": {
       "has_rail": "2018-12-08 22:12:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_reeds": "2018-11-04 21:42:17 +0000"
     },
     "done": true
   },
@@ -544,12 +532,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/hay_block": {
-    "criteria": {
-      "has_at_least_9_wheat": "2018-11-04 22:33:28 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_sand": "2018-11-04 21:29:17 +0000"
@@ -604,12 +586,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/emerald": {
-    "criteria": {
-      "has_at_least_9_emerald": "2018-12-16 17:56:02 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/black_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-11-10 00:21:50 +0000"
@@ -619,6 +595,12 @@
   "minecraft:recipes/building_blocks/acacia_slab": {
     "criteria": {
       "has_planks": "2018-12-16 17:26:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/composter": {
+    "criteria": {
+      "has_wood_slab": "2020-02-08 22:10:03 +0000"
     },
     "done": true
   },
@@ -665,12 +647,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/sugar": {
-    "criteria": {
-      "has_reeds": "2018-11-04 21:42:17 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/orange_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2018-11-04 21:51:37 +0000"
@@ -680,12 +656,6 @@
   "minecraft:recipes/building_blocks/blue_wool": {
     "criteria": {
       "has_white_wool": "2018-11-04 21:24:08 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/gold_block": {
-    "criteria": {
-      "has_at_least_9_gold_ingot": "2018-12-16 17:56:19 +0000"
     },
     "done": true
   },
@@ -980,13 +950,13 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/diamond_pickaxe": {
+  "minecraft:recipes/tools/diamond_hoe": {
     "criteria": {
       "has_diamond": "2018-11-10 01:28:15 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/tools/diamond_hoe": {
+  "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2018-11-10 01:28:15 +0000"
     },
@@ -1021,8 +991,8 @@
       "minecraft:slime": "2018-11-10 01:04:11 +0000",
       "minecraft:husk": "2018-11-04 22:31:46 +0000",
       "minecraft:cave_spider": "2018-12-08 22:16:08 +0000",
-      "minecraft:enderman": "2018-11-04 22:13:43 +0000",
       "minecraft:silverfish": "2018-12-16 18:14:24 +0000",
+      "minecraft:enderman": "2018-11-04 22:13:43 +0000",
       "minecraft:zombie": "2018-11-04 21:07:53 +0000",
       "minecraft:drowned": "2018-11-04 22:09:44 +0000",
       "minecraft:zombie_villager": "2018-11-10 00:59:35 +0000"
@@ -1074,12 +1044,6 @@
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": "2018-11-10 02:05:05 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/redstone_block": {
-    "criteria": {
-      "has_at_least_9_redstone": "2018-11-10 00:38:46 +0000"
     },
     "done": true
   },
@@ -1140,27 +1104,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/slime_block": {
-    "criteria": {
-      "has_at_least_9_slime_ball": "2018-12-16 18:29:46 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/glass_pane": {
     "criteria": {
       "has_glass": "2018-11-10 00:21:50 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
-    "criteria": {
-      "has_at_least_9_gold_nugget": "2018-12-16 17:00:43 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/lapis_lazuli": {
-    "criteria": {
-      "has_at_least_9_lapis": "2018-11-10 00:38:24 +0000"
     },
     "done": true
   },
@@ -1203,12 +1149,6 @@
   "minecraft:recipes/decorations/anvil": {
     "criteria": {
       "has_the_recipe": "2018-12-16 16:51:00 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_ingot_from_gold_block": {
-    "criteria": {
-      "has_at_least_9_gold_ingot": "2018-12-16 17:56:19 +0000"
     },
     "done": true
   },
@@ -1374,12 +1314,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/iron_block": {
-    "criteria": {
-      "has_at_least_9_iron_ingot": "2018-11-04 21:35:53 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/painting": {
     "criteria": {
       "has_wool": "2018-11-04 21:24:08 +0000"
@@ -1419,12 +1353,6 @@
   "minecraft:recipes/redstone/acacia_fence_gate": {
     "criteria": {
       "has_planks": "2018-12-16 17:26:44 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/coal_block": {
-    "criteria": {
-      "has_at_least_9_coal": "2018-11-04 21:27:28 +0000"
     },
     "done": true
   },
@@ -1662,12 +1590,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/slime_ball": {
-    "criteria": {
-      "has_at_least_9_slime_ball": "2018-12-16 18:29:46 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2018-11-04 21:35:53 +0000"
@@ -1696,12 +1618,6 @@
   "minecraft:recipes/redstone/spruce_pressure_plate": {
     "criteria": {
       "has_planks": "2018-11-04 22:05:32 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/coal": {
-    "criteria": {
-      "has_at_least_9_coal": "2018-11-04 21:27:28 +0000"
     },
     "done": true
   },
@@ -1861,8 +1777,8 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:mountains": "2018-11-04 21:57:51 +0000",
       "minecraft:forest": "2018-11-04 21:06:14 +0000",
+      "minecraft:mountains": "2018-11-04 21:57:51 +0000",
       "minecraft:taiga": "2018-11-04 22:43:17 +0000",
       "minecraft:desert_hills": "2018-11-04 21:43:37 +0000",
       "minecraft:desert": "2018-11-04 21:42:15 +0000",
@@ -1938,12 +1854,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
-    "criteria": {
-      "has_at_least_9_iron_nugget": "2018-12-16 17:52:39 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/oak_door": {
     "criteria": {
       "has_planks": "2018-11-04 21:07:58 +0000"
@@ -1989,12 +1899,6 @@
   "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2019-07-06 19:26:54 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
-    "criteria": {
-      "has_at_least_9_iron_ingot": "2018-11-04 21:35:53 +0000"
     },
     "done": true
   },
@@ -2055,12 +1959,6 @@
   "minecraft:husbandry/fishy_business": {
     "criteria": {
       "salmon": "2018-12-16 00:21:28 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/lapis_block": {
-    "criteria": {
-      "has_at_least_9_lapis": "2018-11-10 00:38:24 +0000"
     },
     "done": true
   },
@@ -2214,5 +2112,5 @@
     },
     "done": true
   },
-  "DataVersion": 1968
+  "DataVersion": 2230
 }
